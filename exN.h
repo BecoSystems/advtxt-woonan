@@ -1,5 +1,5 @@
 /*****************************************************************************
- *   exN.h                                    Version 20180714.101818        *
+ *   ex11.h                                    Version 20180714.101818       *
  *                                                                           *
  *   Brief description                                                       *
  *   Copyright (C) 2016-2018    by Ruben Carlo Benante                       *
@@ -27,7 +27,7 @@
 
 /* ------------------------------------------------------------------------- */
 /**
- * \file exN.h
+ * \file ex11.h
  * \ingroup GroupUnique
  * \brief Brief description
  * \details This program really do a nice job as a template, and template only!
@@ -58,8 +58,8 @@
  *
  */
 
-#ifndef _EXN_H
-#define _EXN_H
+#ifndef _EX11_H
+#define _EX11_H
 
 /* ------------------------------------------------------------------------- */
 /* includes */
@@ -92,7 +92,7 @@
 /* #include <libintl.h> */ /* Internationalization / translation */
 /* #include <locale.h> */ /* MACROS LC_ for location specific settings */
 /* #include "libeco.h" */ /* I/O, Math, Sound, Color, Portable Linux/Windows */
-/* #include "exN.h" */ /* To be created for this template if needed */
+/* #include "ex11.h" */ /* To be created for this template if needed */
 
 /* ------------------------------------------------------------------------- */
 /* definitions */
@@ -127,9 +127,9 @@ static int verb = 0; /**< verbose level, global within the file */
 
 void help(void); /**< Prints help information and exit */
 void copyr(void); /**< Prints copyright information and exit */
-void exN_init(void);  /**< Initializes some operations before start */
+void ex11_init(void);  /**< Initializes some operations before start */
 
-#endif /* NOT def _EXN_H */
+#endif /* NOT def _EXN_11 */
 
 /* ------------------------------------------------------------------------- */
 /* vi: set ai et ts=4 sw=4 tw=0 wm=0 fo=croql : C config for Vim modeline    */
