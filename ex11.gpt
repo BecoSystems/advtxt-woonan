@@ -1,0 +1,161 @@
+/* *********************************************************************** *
+*    ex11.gpt, V0.4                                                        *
+*    adventure text - em portugol                                          *
+*                                                                          *
+*    Copyright (C) 2022 by Leticia Da Silva Santos                         *
+*                                                                          *
+*    This program is free software; you can redistribute it and/or modify  *
+*    it under the terms of the GNU General Public License as published by  *
+*    the Free Software Foundation; either version 2 of the License, or     *
+*    (at your option) any later version.                                   *
+*                                                                          *
+*    This program is distributed in the hope that it will be useful,       *
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+*    GNU General Public License for more details.                          *
+*                                                                          *
+*    You should have received a copy of the GNU General Public License     *
+*    along with this program; if not, write to the                         *
+*    Free Software Foundation, Inc.,                                       *
+*    59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+*                                                                          *
+*  To contact the author, please write to:                                 *
+*  Name: Leticia Da Silva Santos <lss4@poli.br>                            *
+*  Webpage: http://beco.poli.br/~username                                  *
+*  Phone: 81993048763                                                      *
+* ************************************************************************ *
+*
+*/
+
+algoritmo advtxt;
+
+variáveis
+
+escolhas : inteiro;
+pausa : literal;
+
+fim-variáveis
+
+início
+
+// introdução da trama
+    imprima("> ATÉ A ULTIMA RISADA\n");
+    imprima(" Senhoras e senhores...");
+    imprima(" Bem-vindos à Tenda do Paraiso, onde a brincadeira nunca termina e a sua risada é nossa moeda.");
+    imprima(" Mas lembre-se: o paraíso nunca é o que parece");
+    imprima(" E se o silêncio dominar");
+    imprima(" siga o som do tambor");
+    imprima(" ele sempre te guiará.");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+// primeira fase
+
+    imprima("\n E foi assim que a noite comecou");
+    imprima(" crianças sorrindo, o cheiro da pipoca se misturando com o de algodão doce.");
+    imprima(" pelo menos era oque eu esperava...");
+    imprima(" Mas tinha algo falso alí.");
+    imprima(" as risadas pareciam falsas, as luzes pareciam piscar...");
+    imprima(" até que ali, perto do palco, um cartaz dançava com a brisa");
+    imprima(" - o show só acaba quando a última risada cessar -");
+    imprima(" \n Você olha ao redor e vê no chão uma máscara de palhaço.");
+    imprima(" ela parecia estar te chamando através de sussuros por você");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+// primeira escolha
+
+    imprima("\n O que você vai fazer?");
+    imprima("\n Digite 1 : pegar o cartaz");
+    imprima(" Digite 2 : pegar a máscara de palhaço");
+    imprima("\n>");
+    escolhas := leia();
+
+se (escolhas = 1) então
+
+     imprima("\n Você pega o cartaz e sente um calafrio.\n As palavras começam a se mover, e o ar fica pesado.");
+     imprima(" O silêncio aumenta, e as risadas começam a morrer.\n O vazio te consome.");
+     imprima(" Você tenta gritar, mas nada sai de sua voz, é como gritar no escuro.\n Você falhou.");
+     imprima("\n [ERRO: o cartaz te prendeu no silêncio, você morreu.]");
+     retorne 1;
+
+senão
+    se (escolhas = 2) então
+
+        imprima("\n");
+
+senão
+
+    imprima("\n [ERRO: sua escolha não foi válida. tente novamente]");
+    retorne 1;
+
+    fim-se
+fim-se
+
+
+// segunda fase
+
+    imprima(" Você pega a máscara e coloca ela em seu rosto, um arrepio agonizante atravessa seu corpo");
+    imprima(" A máscara está grudada, viva em seu rosto.\n Você não consegue tirar.\n As risadas ao redor se tornam ensurdecedoras.");
+    imprima(" Um sussuro paira no ar dizendo \n- você nunca vai sair daqui");
+    imprima("\n BUM... BUM ... BUM...");
+    imprima(" O som do tambor fica mais forte.");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+    imprima(" O espetáculo começou...\n e você, é a atração principal");
+    imprima("\n *A última risada ainda não cessou. Encontre a saída antes que a cortina se feche* ");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+// segunda escolha
+
+    imprima(" \n O que você vai fazer?");
+    imprima("\n Digite 1: seguir o som do tambor");
+    imprima(" Digite 2: procurar uma saída");
+    imprima("\n >");
+    escolhas := leia();
+
+se (escolhas = 1) então
+
+    imprima("\n BUM.. BUM..\n O som fica cada vez mais alto");
+    imprima(" a sala parece ficar menor a cada passo dado, a cada respiração...");
+    imprima(" as risadas se tornam ecos em sua mente");
+    imprima(" e então, a mascara parece te consumir");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+    imprima("\n...\n Você acorda em sua cama com a respiração acelerada");
+    imprima("\n [Parabéns! foi tudo um sonho...] ");
+    imprima("(pressione Enter para continuar)");
+    pausa := leia();
+
+    imprima("\n Ou apenas o começo do show...");
+
+     retorne 0;
+
+senão
+    se (escolhas = 2) então
+
+       imprima("\n Você corre em busca de uma saída, mas é tarde de mais");
+       imprima(" O som do tambor cessa...");
+       imprima(" As risadas se tornam altas, arranham seus sentidos");
+       imprima(" elas parecem te caçar...\n e te acham");
+       imprima("(pressione Enter para continuar)");
+       pausa := leia();
+
+       imprima("\n o circo te engoliu, a máscara agora é parte de você.");
+       imprima("\n GAME OVER");
+
+    retorne 0;
+
+senão
+
+    imprima("\n [ERRO: sua escolha não foi válida. tente novamente]");
+    retorne 0;
+
+    fim-se
+fim-se
+
+fim
+
